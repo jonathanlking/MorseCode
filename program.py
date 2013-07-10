@@ -54,7 +54,7 @@ lengthOfList = len(listOfCharacters)
 
 # print lengthOfList
 testCodeList = [1,0,0,1,1,1,0,0,1]
-transmitMorseCodeFromList(testCodeList)
+transmitMorseCodeFromList(a)
 
 for item in listOfCharacters:
         letterToMorseCodeBinary(item)
