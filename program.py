@@ -15,7 +15,7 @@ space = 0
 a = [dot, space, dash] #Dot Dash
 b = []
 
-testCodeList [1,0,0,1,1,1,0,0,1]
+testCodeList = [1,0,0,1,1,1,0,0,1]
 
 delayTime = 0.1
 
