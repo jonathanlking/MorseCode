@@ -5,6 +5,8 @@ space = 0
 a = [dot, space, dash] #Dot Dash
 b = []
 
+print "Hello James x ;)"
+
 
 
 # The length of a dot is one unit.
