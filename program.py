@@ -15,8 +15,18 @@ space = 0
 a = [dot, space, dash] #Dot Dash
 b = []
 
-function letterToMorseCodeBinary(letter):
+delalTime = 0.1
+
+def letterToMorseCodeBinary(letter):
 	print letter
+	
+def transmitMorseCodeFromList(list):
+	for item in list:
+		if item is 0:
+			GPIO.output(7, GPIO.LOW)
+		else if item is 1:
+			GPIO.output(7, GPIO.HIGH)
+					
 
 
 listOfCharacters = list("Hello World")
