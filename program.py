@@ -1,3 +1,13 @@
+import time
+import RPi.GPIO as GPIO
+
+GPIO.cleanup()
+GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(7, GPIO.OUT)
+
+GRPO.setup(7, GPIO.OUT)
+GPIO.output(7, GPIO.HIGH)
+
 dot = 1
 dash = [1,1,1]
 space = 0
@@ -5,7 +15,7 @@ space = 0
 a = [dot, space, dash] #Dot Dash
 b = []
 
-print "Hello James x ;)"
+print "Hello James x ;) The LED Should now come on!"
 
 
 
