@@ -32,17 +32,13 @@ def transmitMorseCodeFromList(list):
 # 	time.sleep(delayTime)
 	
 	for item in list:
-	
-		GPIO.cleanup()
-		GPIO.setmode(GPIO.BOARD)
-		GPIO.setup(7, GPIO.OUT)
-		GPIO.output(7, GPIO.LOW)
-		time.sleep(delayTime)
-		GPIO.cleanup()
-	
-		
 		if item is 0:
-
+			GPIO.cleanup()
+			GPIO.setmode(GPIO.BOARD)
+			GPIO.setup(7, GPIO.OUT)
+			GPIO.output(7, GPIO.LOW)
+			time.sleep(delayTime)
+			GPIO.cleanup()
 		elif item is 1:
 			GPIO.cleanup()
 			GPIO.setmode(GPIO.BOARD)
