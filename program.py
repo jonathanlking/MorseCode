@@ -3,7 +3,6 @@ import RPi.GPIO as GPIO
 
 GPIO.cleanup()
 GPIO.setmode(GPIO.BOARD)
-GPIO.setmode(7, GPIO.OUT)
 
 GRPO.setup(7, GPIO.OUT)
 GPIO.output(7, GPIO.HIGH)
