@@ -2,11 +2,11 @@ import time
 import string
 import RPi.GPIO as GPIO
 
-dot = 1
+dot = [1]
 dash = [1,1,1]
-space = 0
+space = [0]
 
-a = [dot, space, dash] #Dot Dash
+a = [dot, space, dash, dot, dot] #Dot Dash
 b = []
 
 
