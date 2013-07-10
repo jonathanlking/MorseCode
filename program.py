@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 GPIO.cleanup()
 GPIO.setmode(GPIO.BOARD)
 
-GRPO.setup(7, GPIO.OUT)
+GRIO.setup(7, GPIO.OUT)
 GPIO.output(7, GPIO.HIGH)
 
 dot = 1
