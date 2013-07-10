@@ -2,12 +2,6 @@ import time
 import string
 import RPi.GPIO as GPIO
 
-GPIO.cleanup()
-GPIO.setmode(GPIO.BOARD)
-
-GPIO.setup(7, GPIO.OUT)
-GPIO.output(7, GPIO.HIGH)
-
 dot = 1
 dash = [1,1,1]
 space = 0
@@ -23,6 +17,10 @@ def letterToMorseCodeBinary(letter):
 	print letter
 	
 def transmitMorseCodeFromList(list):
+	GPIO.cleanup()
+	GPIO.setmode(GPIO.BOARD)
+	GPIO.setup(7, GPIO.OUT)
+	
 	for item in list:
 		if item is 0:
 			GPIO.output(7, GPIO.LOW)
