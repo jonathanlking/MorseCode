@@ -15,7 +15,9 @@ space = 0
 a = [dot, space, dash] #Dot Dash
 b = []
 
-delalTime = 0.1
+testCodeList [1,0,0,1,1,1,0,0,1]
+
+delayTime = 0.1
 
 def letterToMorseCodeBinary(letter):
 	print letter
@@ -24,20 +26,22 @@ def transmitMorseCodeFromList(list):
 	for item in list:
 		if item is 0:
 			GPIO.output(7, GPIO.LOW)
+			time.sleep(delayTime)
 		elif item is 1:
 			GPIO.output(7, GPIO.HIGH)
+			time.sleep(delayTime)
 					
 
 
 listOfCharacters = list("Hello World")
 lengthOfList = len(listOfCharacters)
 
-print lengthOfList
+# print lengthOfList
+
+transmitMorseCodeFromList(testCodeList)
 
 for item in listOfCharacters:
         letterToMorseCodeBinary(item)
-
-print "Hello James x ;) The LED Should now come on!"
 
 
 
