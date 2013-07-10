@@ -15,13 +15,17 @@ space = 0
 a = [dot, space, dash] #Dot Dash
 b = []
 
+function letterToMorseCodeBinary(letter):
+	print letter
+
+
 listOfCharacters = list("Hello World")
 lengthOfList = len(listOfCharacters)
 
 print lengthOfList
 
 for item in listOfCharacters:
-        print item
+        letterToMorseCodeBinary(item)
 
 print "Hello James x ;) The LED Should now come on!"
 
