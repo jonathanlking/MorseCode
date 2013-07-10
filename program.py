@@ -1,4 +1,5 @@
 import time
+import string
 import RPi.GPIO as GPIO
 
 GPIO.cleanup()
@@ -13,6 +14,14 @@ space = 0
 
 a = [dot, space, dash] #Dot Dash
 b = []
+
+listOfCharacters = list("Hello World")
+lengthOfList = len(listOfCharacters)
+
+print lengthOfList
+
+for item in listOfCharacters:
+        print item
 
 print "Hello James x ;) The LED Should now come on!"
 
