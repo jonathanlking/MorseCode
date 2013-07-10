@@ -11,7 +11,7 @@ b = []
 
 testCodeList = [1,0,0,1,1,1,0,0,1]
 
-delayTime = 0.1
+delayTime = 1
 
 def letterToMorseCodeBinary(letter):
 	print letter
@@ -20,6 +20,13 @@ def transmitMorseCodeFromList(list):
 	GPIO.cleanup()
 	GPIO.setmode(GPIO.BOARD)
 	GPIO.setup(7, GPIO.OUT)
+	
+	GPIO.output(7, GPIO.HIGH)
+	time.sleep(delayTime)
+	GPIO.output(7, GPIO.LOW)
+	time.sleep(delayTime)
+	GPIO.output(7, GPIO.HIGH)
+	time.sleep(delayTime)
 	
 	for item in list:
 		if item is 0:
