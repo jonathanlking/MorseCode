@@ -2,7 +2,7 @@ import time
 import string
 import RPi.GPIO as GPIO
 
-delayTime = 0.1
+delayTime = 1
 string = "Hello World"
 
 dot = [1]
