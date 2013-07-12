@@ -2,7 +2,7 @@ import time
 import string
 import RPi.GPIO as GPIO
 
-delayTime = 1
+delayTime = 0.1
 string = "Hello World"
 
 dot = [1]
@@ -96,12 +96,12 @@ def transmitMorseCodeFromList(list):
 
 listOfCharacters = list(string)
 
-# binaryArray = []
+binaryArray = [0,0]
 
-# for item in listOfCharacters:
-#         binaryArray.extend(letterToMorseCodeBinary(item))
+for item in listOfCharacters:
+        binaryArray.extend(letterToMorseCodeBinary(item))
         
-transmitMorseCodeFromList([1,0,0,0,1,1,1,0,1,0,1])
+transmitMorseCodeFromList([1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1])
 
 
 
