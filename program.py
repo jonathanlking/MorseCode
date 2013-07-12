@@ -94,7 +94,7 @@ def transmitMorseCodeFromList(list):
 					
 
 
-listOfCharacters = list(string)
+listOfCharacters = list(string.lower)
 
 binaryArray = [0,0]
 
