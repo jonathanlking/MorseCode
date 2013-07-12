@@ -99,7 +99,8 @@ listOfCharacters = list(string.lower())
 binaryArray = [0,0]
 
 for item in listOfCharacters:
-        binaryArray.extend(characterToMorseCodeBinary(item))
+	print characterToMorseCodeBinary(item)
+        # binaryArray.extend(characterToMorseCodeBinary(item))
         
 transmitMorseCodeFromList([1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1])
 
