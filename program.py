@@ -44,7 +44,7 @@ y = dash + space + dot + space + dash + space + dash
 z = dash + space + dash + space + dot + space + dot
 
 
-def letterToMorseCodeBinary(letter):
+def characterToMorseCodeBinary(letter):
 	if letter is 'a': return a
 	elif letter is 'b': return b
 	elif letter is 'c': return c
@@ -99,7 +99,9 @@ listOfCharacters = list(string)
 binaryArray = [0,0]
 
 for item in listOfCharacters:
-        binaryArray.extend(letterToMorseCodeBinary(item))
+        binary = characterToMorseCodeBinary(item)
+        print binary
+        binaryArray.extend(binary)
         
 transmitMorseCodeFromList([1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1,1,0,0,0,1,1,1,0,1,0,1])
 
