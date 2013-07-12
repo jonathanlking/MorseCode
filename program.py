@@ -109,6 +109,7 @@ for word in listOfWords:
         	binaryArray.extend(characterSpace)
         binaryArray.extend(wordSpace)
         
+print binaryArray
 transmitMorseCodeFromList(binaryArray)
 
 
