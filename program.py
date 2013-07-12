@@ -11,6 +11,8 @@ space = [0]
 
 characterSpace = space + space + space
 wordSpace = space + space + space + space + space + space + space
+startingSignal = dash + space + dot + space + dash + space + dot + space + dash
+endOfWork = dot + space + dot + space + dot + space + dash + space + dot + space + dash
 
 
 # The length of a dot is one unit.
@@ -99,7 +101,7 @@ def transmitMorseCodeFromList(list):
 string = string.lower()
 listOfWords = string.split()
 
-binaryArray = []
+binaryArray = [startingSignal]
 
 for word in listOfWords:
 	listOfCharacters = list(word)
@@ -108,7 +110,8 @@ for word in listOfWords:
         	binaryArray.extend(characterToMorseCodeBinary(character))
         	binaryArray.extend(characterSpace)
         binaryArray.extend(wordSpace)
-        
+ 
+binaryArray.extend(endOfWork) 
 print binaryArray
 transmitMorseCodeFromList(binaryArray)
 
