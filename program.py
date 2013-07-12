@@ -96,12 +96,12 @@ def transmitMorseCodeFromList(list):
 
 listOfCharacters = list(string)
 
-binaryArray = []
+# binaryArray = []
 
-for item in listOfCharacters:
-        binaryArray.extend(letterToMorseCodeBinary(item))
+# for item in listOfCharacters:
+#         binaryArray.extend(letterToMorseCodeBinary(item))
         
-transmitMorseCodeFromList(binaryArray)
+transmitMorseCodeFromList([1,0,0,0,1,1,1,0,1,0,1])
 
 
 
