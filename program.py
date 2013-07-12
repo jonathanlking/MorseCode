@@ -9,6 +9,9 @@ dot = [1]
 dash = [1,1,1]
 space = [0]
 
+characterSpace = space + space + space
+wordSpace = space + space + space + space + space + space + space
+
 
 # The length of a dot is one unit.
 # 2. A dash is three units.
@@ -71,6 +74,7 @@ def characterToMorseCodeBinary(letter):
 	elif letter is 'x': return x
 	elif letter is 'y': return y
 	elif letter is 'z': return z
+	elif letter is ' ': return wordSpace
 
 
 	
