@@ -96,15 +96,18 @@ def transmitMorseCodeFromList(list):
 			time.sleep(delayTime)
 			GPIO.cleanup()
 					
+string = string.lower()
+listOfWords = string.split()
 
+binaryArray = []
 
-listOfCharacters = list(string.lower())
-
-binaryArray = [0,0]
-
-for item in listOfCharacters:
-	print characterToMorseCodeBinary(item)
-        binaryArray.extend(characterToMorseCodeBinary(item))
+for word in listOfWords:
+	listOfCharacters = list(word)
+	for character in listOfCharacters:
+		print characterToMorseCodeBinary(character)
+        	binaryArray.extend(characterToMorseCodeBinary(character))
+        	binaryArray.extend(characterSpace)
+        binaryArray.extend(wordSpace)
         
 transmitMorseCodeFromList(binaryArray)
 
